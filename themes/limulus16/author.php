@@ -10,7 +10,7 @@
 
             <article class="single_post">
                 <?php 
-                    $colaboradores = get_users('blog_id=1&orderby=nicename&meta_key=es_colaborador&meta_value=on');
+                    $colaboradores = get_users('  blog_id=1&orderby=nicename&meta_key=es_colaborador&meta_value=on');
                     foreach ($colaboradores as $colaborador) {
                         echo '<h3 class="solo_480 menu_mobile"><a href="'.site_url('/colaborador/').$colaborador->user_nicename.'">' . $colaborador->first_name . ' '.$colaborador->last_name .'</a></h3>';
 

@@ -6,7 +6,7 @@
 	the_post();
 ?>
 
-<!-- Insert content here -->
+<!-- avso de privacidad & contaco -->
 	
 	<section class="feed_container clearfix">
 

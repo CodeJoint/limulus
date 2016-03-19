@@ -53,20 +53,21 @@
 
 					// Get related posts
 
-					$args = array(
-						'posts_per_page'   => 4,
-						'post_type'        => 'post',
-						'post_status'      => 'publish',
-						'exclude'		   => $post->ID,
-						'cat'         	   => $cat_id
-					);
+					$args=array(
+						'cat' => $cat,
+						'order' =>'DESC',
+						'orderby' => 'rand',
+						'post__not_in' => array($post->ID),
+						'posts_per_page'=>4,
+						'ignore_sticky_posts'=>1
+						);
 
 					$related_posts = get_posts( $args );
 
 				foreach ($related_posts as $related) : ?>
 					<article class="each_post">
 						<a href="<?php echo get_permalink( $related->ID ); ?>">
-							<?php echo get_the_post_thumbnail( $related->ID, 'thumbnail' ); ?>
+							<?php echo get_the_post_thumbnail( $related->ID, 'medium_lim' ); ?>
 							<h3><?php echo qtrans_use(qtrans_getLanguage(), $related->post_title, false); ?></h3>
 						</a>
 					</article><!-- each_post -->
@@ -75,7 +76,7 @@
 				</section>
 
 
-			</article><!-- each_post -->
+			</article><!--single_post -->
 
 		</section><!-- feed_container -->
 		

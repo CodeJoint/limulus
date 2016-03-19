@@ -8,8 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="cleartype" content="on">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>css/bootstrap.min.css">
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4dd43084644b4d2b"></script>
+		
 		<?php wp_head(); ?>
 </head>
 
@@ -34,19 +35,19 @@
 
 					<ul class="social_bar no_480">
 						<li class="lang"><?php get_qtrans_single('lang_change'); ?></li>
+<!-- 						<li class="lang"><?php echo qtrans_use($q_config['language'], $post->post_title, true); ?></li> -->
 						<li class="twitter"><a href="https://twitter.com/limulus_mx" target="_blank"></a></li>
 						<li class="facebook"><a href="http://www.facebook.com/revistalimulus" target="_blank"></a></li>
 						<li class="instagram"><a href="http://instagram.com/limulusmx" target="_blank"></a></li>
 					</ul><!-- social_bar -->
 					
 					<div class="search_quesomos clearfix">
-						<a href="<?php echo qtrans_convertURL( site_url('que-somos/')); ?>" class="menu_item que-somos <?php echo ( is_page('que-somos') ) ? 'active' : '' ; ?>"><?php _e('¿qué somos?', 'limulus'); ?></a>
-
+<!-- 						<a href="<?php echo qtrans_convertURL( site_url('que-somos/')); ?>" class="menu_item que-somos <?php echo ( is_page('que-somos') ) ? 'active' : '' ; ?>"><?php _e('¿qué somos?', 'limulus'); ?></a> -->
+						<a href="<?php echo site_url('que-somos/'); ?>" class="menu_item que-somos <?php echo ( is_page('que-somos') ) ? 'active' : '' ; ?>"><?php _e('¿qué somos?', 'limulus'); ?></a>
 						<form method="get" id="searchform" class="main_search clearfix" action="<?php echo qtrans_convertURL( site_url('/') ); ?>">
-							<input  type="submit" class="search_btn" id="searchsubmit" value="" >
-							<input class="menu_item search" type="text" value="" name="s" id="s" >
+							<input type="submit" class="search_btn" id="searchsubmit" value="" >
+							<input type="text" class="menu_item search" value="" name="s" id="s" >
 							<input type="hidden" value="<?php echo qtrans_getLanguage(); ?>" name="lang" id="lang" >
-							
 						</form>
 					</div>
 

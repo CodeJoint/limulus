@@ -13,7 +13,6 @@
 				<section id="sobre_limulus" class="clearfix">
 					<h3 class=""><?php _e('Sobre Límulus', 'limulus'); ?></h3>
 					<?php
-
 					$args = array(
 					    'post_type' => 'attachment',
 					    'numberposts' => null,
@@ -25,6 +24,11 @@
 					?>
 					<section class="gallery no_480 clearfix">
 						<img class="gallery_view" src="" alt="">
+
+<!--
+	QUITAR LOS THUMBNAILS EN CAROUSEL
+-->
+
 						<ul class="thumbnail_container clearfix">
 					<?php
 						if ($attachments) {
@@ -57,7 +61,7 @@
 						</ul>
 					</section><!-- gallery -->
 
-					<article>
+					<article class="qsomos">
 
 						<?php
 						wp_reset_postdata();
@@ -76,6 +80,7 @@
 				<section id="quienes_somos" class="clearfix">
 					<h3 ><?php _e('Quiénes somos', 'limulus'); ?></h3>
 					<div class="socios clearfix">
+
 						<img src="http://placehold.it/806x536">
 						<div class="socio">
 							<h4>Andrea Ruy Sánchez</h4>
@@ -88,8 +93,6 @@
 							<span><a target="_blank" href="http://palabraslugar.tumblr.com">palabraslugar.tumblr</a></span>
 						</div>
 					</div>
-
-					
 
 
 				</section><!-- quienes_somos -->

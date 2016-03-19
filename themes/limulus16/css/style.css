@@ -61,7 +61,7 @@ a:active,a:focus,a:hover{outline:0}
 :-moz-placeholder{font-family:HelveticaLTSTD-BoldC;line-height:2.4rem;color:#000}
 ::-moz-placeholder{font-family:HelveticaLTSTD-BoldC;line-height:2.4rem;color:#000}
 :-ms-input-placeholder{font-family:HelveticaLTSTD-BoldC;line-height:2.4rem;color:#000}
-.container>header{background-image:url(images/header_bg.png);width:100%;height:auto;background-size:contain;background-repeat:no-repeat;background-position-y:100%}
+.container header{background-image:url(images/header_bg.png);width:100%;height:auto;background-size:contain;background-repeat:no-repeat;background-position-y:100%}
 h1.logo{background-image:url(images/logo_web.png);overflow:hidden;text-indent:-99999px;margin:0 0 0 1rem;width:40%;height:14rem;background-repeat:no-repeat;background-size:contain;float:left;background-position-y:100%}
 .renglon{clear:both;width:100%;position:relative}
 .header_menu{text-align:right;font-family:HelveticaLTSTD-BoldC;font-size:1.7rem;width:44.5%;height:100%;float:right;padding-top:6rem;padding-bottom:1rem}
