@@ -25,10 +25,6 @@
 					<section class="gallery no_480 clearfix">
 						<img class="gallery_view" src="" alt="">
 
-<!--
-	QUITAR LOS THUMBNAILS EN CAROUSEL
--->
-
 						<ul class="thumbnail_container clearfix">
 					<?php
 						if ($attachments) {

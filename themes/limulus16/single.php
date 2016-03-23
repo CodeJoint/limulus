@@ -48,7 +48,7 @@
 				<section class="mas_posts">
 					<h4 class=""><?php _e('Artículos relacionados', 'limulus'); ?></h4>
 
-					
+				<section class="relacionados">	
 				<?php
 
 					// Get related posts
@@ -72,7 +72,7 @@
 						</a>
 					</article><!-- each_post -->
 			<?php endforeach; ?>
-
+				</section>
 				</section>
 
 

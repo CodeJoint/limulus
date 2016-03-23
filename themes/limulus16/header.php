@@ -35,20 +35,24 @@
 
 					<ul class="social_bar no_480">
 						<li class="lang"><?php get_qtrans_single('lang_change'); ?></li>
-<!-- 						<li class="lang"><?php echo qtrans_use($q_config['language'], $post->post_title, true); ?></li> -->
 						<li class="twitter"><a href="https://twitter.com/limulus_mx" target="_blank"></a></li>
 						<li class="facebook"><a href="http://www.facebook.com/revistalimulus" target="_blank"></a></li>
-						<li class="instagram"><a href="http://instagram.com/limulusmx" target="_blank"></a></li>
+						<li class="instagram"><a href="https://www.instagram.com/limulusmx/" target="_blank"></a></li>
 					</ul><!-- social_bar -->
 					
 					<div class="search_quesomos clearfix">
-<!-- 						<a href="<?php echo qtrans_convertURL( site_url('que-somos/')); ?>" class="menu_item que-somos <?php echo ( is_page('que-somos') ) ? 'active' : '' ; ?>"><?php _e('¿qué somos?', 'limulus'); ?></a> -->
 						<a href="<?php echo site_url('que-somos/'); ?>" class="menu_item que-somos <?php echo ( is_page('que-somos') ) ? 'active' : '' ; ?>"><?php _e('¿qué somos?', 'limulus'); ?></a>
 						<form method="get" id="searchform" class="main_search clearfix" action="<?php echo qtrans_convertURL( site_url('/') ); ?>">
 							<input type="submit" class="search_btn" id="searchsubmit" value="" >
 							<input type="text" class="menu_item search" value="" name="s" id="s" >
 							<input type="hidden" value="<?php echo qtrans_getLanguage(); ?>" name="lang" id="lang" >
 						</form>
+					</div>
+					<div class="menu-bars">
+						<img src="<?php echo THEMEPATH; ?>images/Bars.svg">
+					</div>
+					<div class="menu-caja">
+						<a href="<?php echo site_url('que-somos/')?>"><?php _e('¿qué somos?','limulus'); ?></a>
 					</div>
 
 				</div><!-- renglon -->
