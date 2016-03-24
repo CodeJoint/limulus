@@ -76,8 +76,8 @@
 				<section id="quienes_somos" class="clearfix">
 					<h3 ><?php _e('Quiénes somos', 'limulus'); ?></h3>
 					<div class="socios clearfix">
-
-						<img src="http://placehold.it/806x536">
+						<img class="gallery_view" src="" alt="">
+<!-- 						<img src="http://placehold.it/806x536"> -->
 						<div class="socio">
 							<h4>Andrea Ruy Sánchez</h4>
 							<span><a target="_blank" href="http://andrearuy.com">andrearuy.com</a></span>
@@ -108,7 +108,10 @@
 						?>
 
 					</article>
-
+					<section class="cont">
+						<h3 class="contactanos"><?php _e('CONTÁCTANOS', 'limulus'); ?></h3>
+						<span class="mail-cont"><a href="mailto:hola@limulus.mx">hola@limulus.mx</a></span>
+					</section>
 				</section>
 				<?php /*
 					<hr class="divider no_480 full_width">

@@ -3,7 +3,7 @@
 
 
 		<section class="feed_container post_feed_home clearfix">
-
+			<article class="article-tag">
 			<section class="tag_title"><?php single_tag_title('#'); ?></section>
 			<?php 
 				$count = 0; 
@@ -29,7 +29,8 @@
 				</article>
 				<?php if($count == 5) echo '</section><section class="all_other">'; ?>
 
-			<?php endwhile; endif; ?>
+				<?php endwhile; endif; ?>
+			</article>
 			</section><!-- all_other -->
 			
 			<div class="clearfix"></div>

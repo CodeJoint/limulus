@@ -8,7 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="cleartype" content="on">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="<?php echo THEMEPATH; ?>css/bootstrap.min.css">
+		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/script.js"></script>
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
 		<?php wp_head(); ?>
@@ -26,12 +27,6 @@
 			<nav class="header_menu">
 				
 				<div class="renglon renglon_1 clearfix">
-					
-					<!-- <form method="get" id="searchform" class="main_search clearfix solo_480 solo_320" action="<?php echo qtrans_convertURL( site_url('/') ); ?>">
-						<input class="menu_item black_border search" type="text" value="" name="s" id="s" >
-						<input type="hidden" value="<?php echo qtrans_getLanguage(); ?>" name="lang" id="lang" >
-						<input  type="submit" class="search_btn" id="searchsubmit" value="" >
-					</form> -->
 
 					<ul class="social_bar no_480">
 						<li class="lang"><?php get_qtrans_single('lang_change'); ?></li>
@@ -52,7 +47,14 @@
 						<img src="<?php echo THEMEPATH; ?>images/Bars.svg">
 					</div>
 					<div class="menu-caja">
-						<a href="<?php echo site_url('que-somos/')?>"><?php _e('¿qué somos?','limulus'); ?></a>
+						<p class="chosen"></p>
+						<a href="<?php echo site_url('que-somos/')?>" class="somos"><?php _e('¿qué somos?','limulus'); ?></a>
+						<?php get_qtrans_single('lang_change');?>
+						<ul class="menu-redes social_bar">
+							<li class="twitter"><a href="https://twitter.com/limulus_mx" target="_blank"></a></li>
+							<li class="facebook"><a href="http://www.facebook.com/revistalimulus" target="_blank"></a></li>
+							<li class="instagram"><a href="https://www.instagram.com/limulusmx/" target="_blank"></a></li>
+						</ul>
 					</div>
 
 				</div><!-- renglon -->

@@ -8,17 +8,7 @@
 		<section class="feed_container clearfix">
 
 			<header class="feed_header clearfix no_480">
-<!--
-				<div class="filters clearfix">
-				
-					<form id="level_1_filter" >
-						
-						<?php get_categories_box( NULL, 'colección', 'chosen-select' ); ?>
 
-					</form>
-
-				</div>-->
-<!-- level_1_filter -->
 <!-- filters -->
 			</header>
 
@@ -29,12 +19,20 @@
 					$query_string  = $wp_query->query_vars['s'];
 				
 				?>
-				<h1><?php printf( _n( "%d Resultado para ", "%d Resultados para ", $total_results, 'limulus' ), $total_results ); ?>"<?php echo $query_string; ?>"</h1>
+				
 				<hr class="divider">
 
 				<section class="search_container clearfix">
 					
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php 
+						if ( have_posts() ) { 
+					?>
+								<h1><?php printf( _n( "%d Resultado para ", "%d Resultados para ", $total_results, 'limulus' ), $total_results ); ?>"<?php echo $query_string; ?>"</h1>
+				<section class="cols">
+					<?php
+							while ( have_posts() ) { 
+								the_post(); 
+					?>
 
 					<article class="each_post clearfix">   <!--each_search_result-->
 						<a href="<?php the_permalink(); ?>">
@@ -55,24 +53,18 @@
 								</span>
 							</h3>
 							
-							<div class="excerpt no_480">
-							<!--<?php the_excerpt(); ?>-->
-							</div>
 						</div><!-- info_container -->
 						</a>
 					</article><!-- each_serarch_result -->
-
-					<?php endwhile; endif; ?>
+					
+						<h1><?php } } else { echo  '<section class="fail">TU BÚSQUEDA <br> NO OBTUVO <br> NINGÚN <br>RESULTADO</section> <span class="volver"><a href="<?php echo site_url(); ?>">ir al inicio</a></span>'; } ?></h1>
+						
+					
+				</section>
 
 				</section>
 				
 				<hr class="divider">
-				<!--
-				<form id="secondary_searchbox" class="searchform_results clearfix" method="get" action="<?php echo qtrans_convertURL( site_url('/') ); ?>">
-					<input type="search" id="searchbox2" value="" name="s" id="s" >
-					<input type="hidden" value="<?php echo qtrans_getLanguage(); ?>" name="lang" id="lang" >
-					<input type="submit" id="submit_search2" value="">
-				</form>-->
 				
 			</article><!-- each_post -->
 	
