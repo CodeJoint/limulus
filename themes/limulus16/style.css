@@ -377,6 +377,11 @@ sup{ font-family:'Merriweather'; font-size:1.2rem; vertical-align: top; line-hei
 article.single_post{width:70%;}
 span.mail-cont a{text-decoration: none;color:#000;}
 .cont{margin-bottom:100px;}
+
+div.slider_qs img{ width:100%;}
+div.slider_qs{height:770px;}
+
+
 /*Search*/
 .search_page h1{font-family: 'Raleway-Extralight'; font-size: 4rem; text-transform: uppercase; margin: 4rem 0 2rem 0;}
 /*
@@ -454,7 +459,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 /*Screen 480*/
 
-@media only screen and (max-width: 480px) and (orientation : portrait), only screen and (max-width: 768px) and (orientation : landscape){
+@media only screen and (max-width: 480px) and (orientation : portrait), only screen and (max-width: 780px) and (orientation : landscape){
 	body{color: #000;}
 	.solo_480{display: block;}
 	.no_480{display: none!important;}
@@ -526,8 +531,9 @@ body.home .main_footer{position: fixed; bottom:0px; }
   	.relacionados{-moz-column-count:2;-webkit-column-count:2;-o-column-count:2;column-count:2;}
 	.relacionados img{margin-bottom:16px;}
 	/*Tag.php*/
-	article.article-tag{margin-top:-70px;}
-	section#tag_title{margin-bottom:70px!important;}
+	article.article-tag{margin-top:-50px;}
+	section.tag_title{margin-bottom:50px!important;}
+
 
   	/*Que somos*/
   	.que_somos > section{margin-bottom: 1rem;padding: 0 1rem;}
@@ -548,6 +554,9 @@ body.home .main_footer{position: fixed; bottom:0px; }
   	.social_bar{float: none;}
 
   	/*Search page*/
+  	body.search div.container header.clearfix{margin-bottom:0;}
+  	article.search_page{margin-top:0;}
+  	article.search_page hr.divider{display:none;}
   	.search_page h1{font-size: 2.6rem;margin: 2rem 0 1rem 0;padding: 0 2rem;}
   	.search_container{margin: 2rem 0 0 0;padding: 0 2rem;}
   	.each_serarch_result{margin: 0 0 1rem 0;}
@@ -559,6 +568,9 @@ body.home .main_footer{position: fixed; bottom:0px; }
   	#secondary_searchbox{position: relative; width: 80%; margin: 0 auto 1.5rem auto; padding-left: 3rem;}
 	#submit_search2{ width: 30px; height: 28px; border: none; background: url(images/search.png) no-repeat center left; text-align: left; position: absolute; top: 0; cursor: pointer; left: 0;}
 	#searchbox2{ display: block; width: 100%; float: left; line-height: 2rem; padding: .5rem.5rem; text-align: left; height: 28px; color: #000; margin-right: .5rem; box-shadow: none; border-color: #000; border-width: 1px;}
+
+	section.cols{margin-top:50px;-webkit-column-count:2;-moz-column-count:2;-o-column-count:2;column-count:2;}
+	section.cols img{border-bottom:40px!important;}
 
 	/*Footer*/
 	/*.main_footer{border-top: 4px double #606060;}*/

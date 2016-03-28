@@ -10,6 +10,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/script.js"></script>
+		<script type="text/javascript" language="javascript"src="<?php echo THEMEPATH; ?>js/cycle.js"></script>
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
 		<?php wp_head(); ?>
