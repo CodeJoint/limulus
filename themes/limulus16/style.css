@@ -459,7 +459,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 /*Screen 480*/
 
-@media only screen and (max-width: 480px) and (orientation : portrait), only screen and (max-width: 780px) and (orientation : landscape){
+@media only screen and (max-width: 480px) and (orientation : portrait), only screen and (max-width: 768px) and (orientation : landscape){
 	body{color: #000;}
 	.solo_480{display: block;}
 	.no_480{display: none!important;}
@@ -476,7 +476,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	#searchform{width:100%;}
 	/*holkan */
 	p.chosen{background-image:url('images/cross.svg');background-repeat:no-repeat;height:20px;width:20px;position:absolute;top:5px;right:5px;}
-	form.main_search input.menu_item{margin-top:10px!important;left:20px!important;display:none;}/*programacion javascript para aparecer y desaparecer search*/
+	form.main_search input.menu_item{margin-top:10px!important;left:20px!important;}/*display:none;*/
 	form.main_search input.search_btn{margin-top:9px!important;left:143%;}
 	nav.header_menu div.menu-bars{display:block;width:30px;height:auto;position:absolute;top:0px;}/*programacion javascript para aparecer la caja del menu*/
 	nav.header_menu div.menu-bars img{width:30px;height:auto;}
@@ -504,7 +504,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.side_tags{ display: none;}
 	.header_menu .menu_item{ width: 35px; text-indent: -9999px; overflow: hidden; height: 33px;}
 	.header_menu .menu_item.search{ float: left; margin-top: 0; text-indent: 0; }
-	.header_menu .menu_item.que-somos{ background-image: url('images/info.png'); background-position-x: 1px; }
+	/*.header_menu .menu_item.que-somos{ background-image: url('images/info.png'); background-position-x: 1px;display:none;}*/
 	.header_menu .menu_item.que-somos.active{ background-image: url('images/info_white.png');}
 
 	/*Post feed*/
@@ -552,6 +552,10 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.cycle-container li img{width: 100%; height: auto;}
   	.email_contacto{font-size: 1.5rem;}
   	.social_bar{float: none;}
+
+  	/*search form*/
+  	.menu_item{width:144%!important;margin-left:0%!important;}
+  	input#s.menu_item.search{margin-top:30px!important;}
 
   	/*Search page*/
   	body.search div.container header.clearfix{margin-bottom:0;}

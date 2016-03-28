@@ -455,11 +455,11 @@
 		 */
 		function openSearchBox(){
 
-			$('h1.logo').fadeOut('fast');
+			/*$('h1.logo').fadeOut('fast');*/
 
 			if( $(window).width() < 340 ){
 				$('.lang_change').animate({
-					'margin-left'  : '35px'
+					'margin-left'  : '0px'
 				}, 80, 'swing');
 
 				$('#searchform').css( 'position' , 'absolute').animate({
@@ -471,7 +471,7 @@
 
 			if( $(window).width() < 435 ){
 				$('.lang_change').animate({
-					'margin-left'  : '35px'
+					'margin-left'  : '0px'
 				}, 80, 'swing');
 
 				$('#searchform').css( 'position' , 'absolute').animate({
@@ -483,18 +483,18 @@
 
 			if( $(window).width() < 768 ){
 				$('.lang_change').animate({
-					'margin-left'  : '35px'
+					'margin-left'  : '0px'
 				}, 80, 'swing');
 
 				$('#searchform').css( 'position' , 'absolute').animate({
 					width     : '400%',
-					right     : '45%'
+					right     : '0%'
 				}, 140, 'swing').addClass('open');
 				return;
 			}
 
 			$('.lang_change').animate({
-				'margin-left'  : '45px'
+				'margin-left'  : '0px'
 			}, 80, 'swing');
 
 			$('#searchform').css( 'position' , 'absolute').animate({
