@@ -58,7 +58,7 @@
 					<div class="menu-bars">
 						<img src="<?php echo THEMEPATH; ?>images/Bars.svg">
 					</div>
-					<div class="menu-caja">
+					<div class="menu-caja"><!--MENU MOVIL-->
 						<p class="chosen"></p>
 						<a href="<?php echo site_url('que-somos/')?>" class="somos"><?php _e('¿qué somos?','limulus'); ?></a>
 						<?php get_qtrans_single('lang_change');?>

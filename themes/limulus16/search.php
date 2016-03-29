@@ -58,7 +58,9 @@
 						</a>
 					</article><!-- each_serarch_result -->
 					
-						<h1><?php } } else { echo  '<section class="fail">TU BÚSQUEDA <br> NO OBTUVO <br> NINGÚN <br>RESULTADO</section> <span class="volver"><a href="<?php echo site_url(); ?>">ir al inicio</a></span>'; } ?></h1>
+						<h1><?php } } else { echo  '<section class="fail">TU BÚSQUEDA <br> NO OBTUVO <br> NINGÚN <br>RESULTADO</section>';}?>
+							<span class="volver"><a href="<?php echo site_url(); ?>">ir al inicio</a></span>
+						</h1>
 						
 					
 				</section>
