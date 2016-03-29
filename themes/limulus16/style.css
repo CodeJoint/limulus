@@ -624,7 +624,9 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.menu_mobile a{text-decoration: none; color: inherit;}
 
 }
-
+@media only screen and (max-width:568px){
+	.each_post img{width:100%;height:249px;margin-bottom:-30px;}
+}
 
 @media only screen and (max-width:435px ) {
 	.header_menu div.search_quesomos form input.menu_item{position:absolute;top:-5px;left:3%;width:140%!important;}
