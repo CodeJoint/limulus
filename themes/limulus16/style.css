@@ -198,7 +198,7 @@ body.home {background: #000;}
 /*Header*/
 .container > header{width: 100%; height: auto;background-size: contain; background-repeat: no-repeat; background-position-y: 100%;margin-bottom: 80px;}
 body.home .container > header{width: 100%; height: auto;background-size: contain; background-repeat: no-repeat; background-position-y: 100%;margin-bottom: 0px;}
-h1.logo{ text-indent: -999px; margin: 20px 0 0 1rem; width: 40%; height: 14rem; background-repeat: no-repeat; background-size: contain; float: left; background-position-y: 100%; overflow: hidden; background-image: url('images/logo_web.png'); }
+h1.logo{ text-indent: -999px; margin: 20px 0 0 1rem; width: 40%; height: 14rem; background-repeat: no-repeat; background-size: contain; float: left; background-position-y: 100%; overflow: hidden; background-image: url('images/logo_web.png');z-index:2; }
 body.home h1.logo{ text-indent: -999px; margin: 15px 0 0 1rem; width: 40%; height: 14rem; background-repeat: no-repeat; background-size: contain; float: left; background-position-y: 100%; overflow: hidden; background-image: url('images/logo_web_gris.png'); }
 
 .renglon{clear:both; width: 100%; position: relative;}
@@ -294,7 +294,12 @@ body.home .social_bar .instagram{background-position: -117px -27px;}
 .each_post a{text-decoration: none; color: inherit;}
 .each_post:hover h3{display: block;}
 .each_post:hover img{opacity: .6}
-.each_post img{width: 100%; height: auto;}
+.each_post img{width: 100%; height: 273px;}												/*alto de las magenes reticula*/
+
+.all_other{-webkit-column-count:6;-moz-column-count:6;-o-column-count:6;-column-count:6;}
+
+
+
 .each_post h3{display: none; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 5%; padding:5px;width: 90%;}
 .each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: block; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
 .each_post p{font-size: 1.5rem;}
@@ -375,11 +380,21 @@ sup{ font-family:'Merriweather'; font-size:1.2rem; vertical-align: top; line-hei
 .socio span a {color: #b3b3b3; font-family: 'Raleway-Regular'; font-size: 12px;}
 .socio h4 {font-family: 'Merriweather'; font-weight: 300; font-size: 18px; margin-bottom: 20px;}
 article.single_post{width:70%;}
+article.qsomos p:first-child{margin-top:0px;}
+article.qsomos p{width:100%;}
+section#quienes_somos{margin-top:232px;}
+section.tag_title{float:left;font-size:3em;margin-bottom:140px;font-family: 'HelveticaLTSTD-Light';}
 span.mail-cont a{text-decoration: none;color:#000;}
 .cont{margin-bottom:100px;}
 
 div.slider_qs img{ width:100%;}
-div.slider_qs{height:770px;}
+section.cycle-slideshow img{width:100%;}
+section.gallery.clearfix{height:100%!important;}
+article.qsomos{margin-top:-63%;}
+
+/*holkan*/
+
+
 
 
 /*Search*/
@@ -438,7 +453,27 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	width: 90%;
 } 
 
-																																						
+
+
+
+
+
+
+
+
+/*media queries*/
+/*Screen 1440*/
+@media screen and (max-width:1440px){
+	article.single_post{width:80%;}
+	.each_post img{width: 100%; height: 206px;margin-bottom:-10px;}	
+}
+/*Screen 1280 */
+@media screen and (max-width:1280px){
+	article.single_post{width:90%;}
+	.each_post img{width: 100%; height: 181px;margin-bottom:-10px;}	
+}
+
+
 /*Screen 1024 iPad*/
 
 @media screen and (max-width: 1024px){
@@ -448,26 +483,22 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.feed_container{width: 100%;}
 	.all_other{-webkit-column-count:4!important;-moz-column-count:4!important;-o-column-count:4!important;-column-count:4!important;}
 	article.single_post{width:100%;}
-}
-/*END MEDIA 1024*/
-
-/*Screen 768*/
-@media only screen and(max-width:768px) and (orientation:portrait) and (max-width: 953px)and(orientation:landscape){
-	.menu-bars{display:none;}
-	form.main_search{border:1px solid red!important;} 
+/*	article.qsomos{margin-top:50px;}*/
+	section.gallery{height:70vh;}
+	.each_post img{width: 100%; height: 220px;margin-bottom:-10px;}	
 }
 
-/*Screen 480*/
+/*Screen 840*/
 
-@media only screen and (max-width: 480px) and (orientation : portrait), only screen and (max-width: 768px) and (orientation : landscape){
+@media only screen and (max-width: 840px){/*era 480*/
 	body{color: #000;}
 	.solo_480{display: block;}
-	.no_480{display: none!important;}
+	.no_480{display:none!important;}
 	.divider.double{height: 1px;}
 
 	/*Header*/
 	header.clearfix{height:100px!important;}
-	h1.logo{ width: 100%; position:relative;left:30%; height: 5rem!important;top:10px;z-index: 1;}
+	h1.logo{ width: 100%; position:relative;left:35%; height: 5rem!important;top:10px;z-index: 1;}
 	.header_menu{ /*padding-top: 1.6rem;*/ width: 90%;height:50px!important;position:absolute;top:25px;}
 /*	.container > header{ height: 6.5rem; border-style: solid; border-color: #606060; border-width: 0 0 1px 0;}*/
 	.header_menu .lang_change{font-size: 1.4rem; padding: 1rem .4rem .5rem .4rem; height: 33px; float: right; width: 36px;}
@@ -487,6 +518,10 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.menu-redes{position:absolute;top:70%}
 	ul.menu-redes li{display:inline-block;width:24px;height:24px;}
 	.search_quesomos a.menu_item{display:none;}
+
+	/*search form*/
+	.header_menu div.search_quesomos form input.menu_item{position:absolute;top:-5px;left:3%;width:140%!important;}
+	.header_menu div.search_quesomos form input.search_btn{position:absolute;top:-5px;left:140%;width:20%!important;}
 
 	.feed_header .banner {width: 97%;}
 	.feed_header .banner a{text-decoration: none;}
@@ -518,6 +553,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.each_post h3{width:90%;background-color:#000;color:#fff;}
 	.numero_2{display:none;}
 	.numero_3, .numero_4, .numero_5{display:none;}
+
+	.each_post img{width: 100%; height: 372px;margin-bottom:-10px;}	
 
 
   	/*Single*/
@@ -587,118 +624,33 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.menu_mobile a{text-decoration: none; color: inherit;}
 
 }
-/*END 480 RESOLUTION*/
 
 
-/*@media only screen and (max-width: 768px)and (orientation : landscape){
-	
-	.header_menu{width:32%;}
-	h1.logo{width:35%;}
-	.search_btn{left:0.3rem;}
-	.renglon.renglon_1{width:45%;}
-	#quienes_somos .contact.square:nth-of-type(2n){margin-right: 2rem;}
-	#quienes_somos .contact.square:nth-of-type(3n){margin-right: 2rem;}
-
-}*/
-
-/*Screen 320 iPhone*/
-
-/*@media screen and (max-width: 320px){
-
-  	.no_320{display: none;}
-  	.solo_320{display: block;}
-
-	.container{min-width: 320px;}*/
-	/*Header*/
-	/*h1.logo{ margin-left: .5rem; width: 50%;}
-	.header_menu{ width:43%;}
-	.feed_header .banner {width: 99.5%;text-align: left;padding: 0 0 0 1rem;}
-	.feed_header .banner .img_wrap{width: 140px;}
-	.feed_header .banner .info_container{width: 51%;}
-	.feed_header .banner .info_container h3{padding-left: 0;}*/
-
-	/*Post Feed*/
-	/*.feed_container{ margin-top: 1rem;}
-	.each_post{ margin:0;}
-	.each_post img{ width: 100%;}
-	.each_post h3{ width: 51%; margin: 0;}
-*/
-	/*Que somos*/
-	/*#sobre_limulus article p{ font-size:1.5rem;}
-	#quienes_somos .contact h4, #nuestros_aliados .contact h4{ font-size:1.3rem;}
-	#quienes_somos .contact.square{ width:46%;}
-	#nuestros_aliados .contact.long{ width:41%; float:left;}
-	#nuestros_aliados .contact.long img{ width:100%;}*/
-
-	/*Single*/
-	/*.mas_posts h4{ margin: 1rem 0; }
-*/
-	/*Footer*/
-	/*.main_footer .logos li.limulus{display: block; clear: right; margin: 0 auto 3rem auto;}
-	.main_footer .logos li.fiac{margin: 3rem auto 0 auto;}
-	.main_footer .logos li{width: 90%;clear: both;}
-	.social_bar{margin-bottom: 1rem;}
-}*/
-
-
-/*SPECIAL*/
-
-/*@media screen and (min-width: 481px) and (max-width: 562px){
-	.container > header{ height: auto; background-position-y: 100%;}
-	.header_menu{ width: 55%; padding-top: 1rem; padding-bottom: 1rem;}
-	h1.logo{ background-size: contain; margin-top: 3rem; background-position-y: 80%; height: 10rem;}
-	.side_tags a{font-size: 1.4rem;letter-spacing: 1px;}	
+@media only screen and (max-width:435px ) {
+	.header_menu div.search_quesomos form input.menu_item{position:absolute;top:-5px;left:3%;width:140%!important;}
+	.header_menu div.search_quesomos form input.search_btn{position:absolute;top:-5px;left:140%;width:20%!important;}
+	header.clearfix h1.logo{width:150px;margin:0px auto;}
+	section#sobre_limulus{margin-top:0;}
+	div.info_container h3{width:100%;height:100%;position:absolute;top:0;left:0;}
+	div.info_container h3 span{font-size:1rem;line-height:1.3rem;}
+	.each_post img{width: 100%; height: 190px;margin-bottom:-30px;}		
+/*	article.qsomos{margin-top:-20px;}
+*//*	section.gallery .clearfix{height:300px;}*/
+}
+@media only screen and (max-width:360px){
+	footer.main_footer a{display:block;}
+	footer.main_footer b{display:none;}
+}
+@media only screen and (max-width:320px){
+	h1.logo{ width: 100%; position:relative;left:30%; height: 5rem!important;top:10px;z-index: 1;}
+	/*footer.main_footer a{display:block;}
+	footer.main_footer b{display:none;}*/
+	header.clearfix h1.logo{width:150px;margin-top:20px;margin-left:-10px;}
+	section#sobre_limulus.clearfix{margin-top:0px ;}
+	section#sobre_limulus h3{font-size: 1.5rem ;}
 }
 
-@media screen and (min-width: 769px) and (max-width: 812px){
-	.each_post a{text-decoration: none; color: inherit;}
-	.each_post:nth-of-type(5n-4){}
-	.each_post:nth-of-type(5){margin-right: 0;}
-}
 
-@media screen and (min-width: 769px) and (max-width: 945px){
-	.search_btn{right:26%;}
-	.header_menu{width: 50%;}
-}
-
-@media screen and (min-width: 630px) and  (max-width: 975px){
-	.each_post{width: 21%; margin: 20px 20px 0 0;}
-	.each_post:nth-of-type(5n){margin-right: 20px;}
-	.each_post:nth-of-type(5n){ margin-right: 20px;}
-	.each_post:nth-of-type(4n){margin-right: 0;}
-}
-
-@media screen and (min-width: 481px) and  (max-width: 630px) and (orientation : portrait){
-	.each_post{width: 28%; margin: 20px 20px 0 0;}
-
-	.each_post:nth-of-type(5n){margin-right: 20px;}
-	.each_post:nth-of-type(4n){ margin-right: 20px;}
-	.each_post:nth-of-type(3n){margin-right: 0;}
-}
-@media screen and (min-width: 321px) and  (max-width: 461px){
-
-	#searchform{position: absolute; right: 60%;}
-
-}*/
-
-/*@-moz-document url-prefix() {
-
-    .header_menu .menu_item {
-	    width: 27%;
-	    height: 18px;
-	}
-
-	.feed_container{width: 82.5%;}
-	.search_btn{ right: 3.5%;}
-	.header_menu .lang_change{height: 20px;}
-
-}
-*/
 /*
 holkan
 */
-article.qsomos p:first-child{margin-top:47px;}
-article.qsomos p{width:100%;}
-section#quienes_somos{margin-top:232px;}
-section.tag_title{float:left;font-size:3em;margin-bottom:140px;font-family: 'HelveticaLTSTD-Light';}
-.all_other{-webkit-column-count:6;-moz-column-count:6;-o-column-count:6;-column-count:6;}

@@ -22,21 +22,21 @@
 					);
 					$attachments = get_posts( $args );
 					?>
-					<section class="gallery no_480 clearfix">
+					<section class="gallery clearfix">
 						
 
-						<div class="cycle-slideshow slider_qs">
+						<section class="cycle-slideshow slider_qs">
 					<?php
 						if ($attachments) {
 						    foreach ($attachments as $attachment) {
 						    	$link_array = wp_get_attachment_image_src($attachment->ID, 'full');
 						    	$link = $link_array[0];
-						        echo "<img class='galery_view' src='".$link."' alt=''>";
+						        echo "<img class='gallery_view' src='".$link."' alt=''>";
 						    }
 						}
 					?>
-						</div>
-						<div class="clearfix"></div>
+						</section>
+						<!-- <div class="clearfix"></div> -->
 					</section>
 
 					<article class="qsomos">

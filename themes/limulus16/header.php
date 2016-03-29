@@ -11,12 +11,22 @@
 		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/jquery-1.12.2.min.js"></script>
 		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/script.js"></script>
 		<script type="text/javascript" language="javascript"src="<?php echo THEMEPATH; ?>js/cycle.js"></script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		
 		<?php wp_head(); ?>
 </head>
 
 	<body <?php body_class(); ?>>
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<!--[if lt IE 9]>
 			<p class="chromeframe">Estás usando una versión <strong>vieja</strong> de tu explorador. Por favor <a href="http://browsehappy.com/" target="_blank"> actualiza tu explorador</a> para tener una experiencia completa.</p>
 		<![endif]-->
@@ -44,6 +54,7 @@
 							<input type="hidden" value="<?php echo qtrans_getLanguage(); ?>" name="lang" id="lang" >
 						</form>
 					</div>
+					
 					<div class="menu-bars">
 						<img src="<?php echo THEMEPATH; ?>images/Bars.svg">
 					</div>

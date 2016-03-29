@@ -36,12 +36,13 @@
 
 					<article class="each_post clearfix">   <!--each_search_result-->
 						<a href="<?php the_permalink(); ?>">
-						<?php 
-						if( has_post_thumbnail() ) {
-							the_post_thumbnail();
-						}else{
-
-						 	echo "<img src='".THEMEPATH."/images/no_image.png' /> ";
+							<?php 
+								if( has_post_thumbnail() ) {
+									the_post_thumbnail();
+								}else{ 
+							?>
+	
+						 	<?php echo "<img src='".THEMEPATH."/images/no_image.png' /> ";
 						} 
 						?>
 						<div class="info_container">

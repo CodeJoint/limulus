@@ -40,8 +40,13 @@
 							<?php echo wpautop( $footnote ); ?>
 						</footer>
 					<?php endif; ?>
-					
-
+					<!-- <section class="socialplug">
+				<div class="tw">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.2016.limulus.mx" data-dnt="true">Tweet</a>
+				</div>
+				<div class="fb-like fb" data-href="https://www.2016.limulus.mx" data-width="62" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+				</div>
+					</section> -->
 
 				</section>
 

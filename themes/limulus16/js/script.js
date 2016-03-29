@@ -12,11 +12,18 @@ $(document).ready(function(){
 /*
 SEARCH FORM
 */
-	if ($(window).width() < 768) {
+	if ($(window).width() <=840) {
+		/*$(".logo").hide();*/
 		$(".menu_item").hide();
 		$(".search_btn").click(function(){
+			$(".menu-bars").hide();
 			$(".logo").fadeOut("slow");
 			$(".menu_item").fadeIn("slow");
 		});
-	}
+	};
 });
+
+
+
+
+
