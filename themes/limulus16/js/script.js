@@ -3,10 +3,10 @@ $(document).ready(function(){
 
 	$(".menu-caja").hide();
 	$(".menu-bars").click(function(){
-		$(".menu-bars").hide();$(".menu-caja").fadeIn("slow","swing");
+		$(".menu-bars").hide();$(".menu-caja").toggle("slide");
 	});
 	$(".chosen").click(function(){
-		$(".menu-caja").fadeOut("slow");$(".menu-bars").show();
+		$(".menu-caja").toggle("slide");$(".menu-bars").show();
 	});
 
 /*
