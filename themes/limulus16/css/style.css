@@ -64,7 +64,7 @@ a:active,a:focus,a:hover{outline:0}
 .container header{background-image:url(images/header_bg.png);width:100%;height:auto;background-size:contain;background-repeat:no-repeat;background-position-y:100%}
 h1.logo{background-image:url(images/logo_web.png);overflow:hidden;text-indent:-99999px;margin:0 0 0 1rem;width:40%;height:14rem;background-repeat:no-repeat;background-size:contain;float:left;background-position-y:100%}
 .renglon{clear:both;width:100%;position:relative}
-.header_menu{text-align:right;font-family:HelveticaLTSTD-BoldC;font-size:1.7rem;width:44.5%;height:100%;float:right;padding-top:6rem;padding-bottom:1rem}
+.header_menu{text-align:right;font-family:'HelveticaLTSTD-BoldC';font-size:1.7rem;width:44.5%;height:100%;float:right;padding-top:6rem;padding-bottom:1rem}
 .header_menu a{text-decoration:none;color:inherit}
 .header_menu .lang_change{height:28px;padding:.7rem 1rem .2rem;float:left;margin-bottom:1rem}
 .header_menu .menu_item{display:block;width:32%;float:left;line-height:2rem;padding:.5rem;text-align:center;height:28px;color:#000;margin-right:.5rem}
