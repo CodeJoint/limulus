@@ -22,8 +22,7 @@
 				
 				<hr class="divider">
 
-				<section class="search_container clearfix">
-					
+
 					<?php 
 						if ( have_posts() ) { 
 					?>
@@ -31,25 +30,26 @@
 						<?php printf( _n( "%d Resultado para ", "%d Resultados para ", $total_results, 'limulus' ), $total_results ); ?>"
 						<?php echo $query_string; ?>"
 					</h1>
-								
-				</section>
 
-				<section class="cols">
+				<section class="feed_container post_feed_home clearfix all_other">
+
 					<?php while(have_posts()):the_post(); ?>
 
-					<figure>
+					<article class="each_post <?php echo 'numero_'.$count; ?>">
 						<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail(); ?>
+							<?php
+								if($count > 5){
+									the_post_thumbnail('medium_lim', array( )); //mediun_lim 
+								} else {
+									the_post_thumbnail('big_lim', array( )); //big_lim
+								}
+							?>
+							<h3><?php the_title(); ?></h3>
 						</a>
-						<figcaption class="info_container">
-							<h3>
-								<?php the_title(); ?>
-								<span><?php the_author(); ?></span>
-							</h3>
-						</figcaption>
-					</figure>
+					</article>
 
 				<?php endwhile; ?>
+				
 				</section>
 
 				<section>
