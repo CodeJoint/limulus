@@ -539,11 +539,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	nav.header_menu div.menu-bars{display:block;width:30px;height:auto;position:absolute;top:0px;}/*programacion javascript para aparecer la caja del menu*/
 	nav.header_menu div.menu-bars img{width:30px;height:auto;}
 
+	.menu-caja{width:150px;height:200px;background:#fff;position:fixed;top:0px;left:-150px;display:block;z-index:1;}
 	
-
-
-	div.menu-caja{width:150px;height:200px;background:#fff;position:fixed;top:0;left:0;}
-	.menu-caja{display:block;z-index:1;}
 	div.menu-caja a.somos{position:absolute;top:20%; left:24px;font-family:'Raleway-Medium';}
 	div.menu-caja a.lang_change{position:absolute;top:45%; left:24px;font-family:'Raleway-Medium';cursor:pointer;}
 	.menu-redes{position:absolute;top:70%}

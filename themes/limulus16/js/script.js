@@ -1,12 +1,14 @@
 $(document).ready(function(){
 	console.log("si no funcionara no me vieras");
 
-	$(".menu-caja").hide();
+	// $(".menu-caja").hide();
 	$(".menu-bars").click(function(){
-		$(".menu-bars").hide();$(".menu-caja").toggle("slide");
+		$(".menu-bars").hide();
+		$(".menu-caja").animate({left: '0px'});
 	});
 	$(".chosen").click(function(){
-		$(".menu-caja").toggle("slide");$(".menu-bars").show();
+		$(".menu-caja").animate({left:'-150px'});
+		$(".menu-bars").show();
 	});
 
 /*
