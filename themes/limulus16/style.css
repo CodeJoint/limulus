@@ -281,7 +281,7 @@ ul.menu-redes li{width:30px;height:30px;}
 .feed_header .banner .info_container span{ display: block; clear: left; font-family: 'HelveticaLTSTD-LightC'; font-size: 2rem; text-align: left; text-transform: none;}
 .feed_container{width:100%!important;/*float:left;*/border-color:#B1B1B1;border-width:1px 1px 1px 0;margin-bottom:.5rem;padding-bottom:0.3rem;min-height:420px;}
 
-.each_post.numero_1, .each_post.numero_2 {width: 49.3%!important; float: left;position: relative;margin-right: 1%;/*margin-bottom: 1%;*/}
+.each_post.numero_1, .each_post.numero_2 {width: 49.3%; float: left;position: relative;margin-right: 1%;height:400px}
 .each_post.numero_1 img, .each_post.numero_2 img {width: 100%; height: auto;position: relative;top: 0px;left: 0px;}
 .each_post.numero_1 h3, .each_post.numero_2 h3 {position: absolute; top: 10%;left: 5%;font-size: 22px; padding: 5px;width: 80%;}
 .each_post.numero_1:hover img, .each_post.numero_2:hover img {opacity: .6;}
@@ -295,7 +295,7 @@ ul.menu-redes li{width:30px;height:30px;}
 /*.each_post{width: 23.7%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 1%;}*/
 .each_post{width: 100%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 16px;}
 .each_post a{text-decoration: none; color: inherit;}
-.each_post:hover h3{display: block;}
+.each_post:hover h3{display: inline;background:#000;}
 .each_post:hover img{opacity: .6}
 
 .each_post img{width: 100%; height: 293px;}	
@@ -305,9 +305,10 @@ ul.menu-redes li{width:30px;height:30px;}
 .all_other{-webkit-column-count:6;-moz-column-count:6;-o-column-count:6;-column-count:6;}
 
 
-
-.each_post h3{display: none; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 5%; padding:5px;width: 90%;}
-.each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: block; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
+.each_post span{display:inline;}
+.each_post span:hover{background:#000;}
+.each_post h3{display:inline; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 5%; padding:5px;width: 80%;}
+.each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: inline; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
 .each_post p{font-size: 1.5rem;}
 .no_post_error{ font-family: 'HelveticaLTSTD-BoldC'; font-size: 5rem; color: #000; text-transform: uppercase; text-align: left; margin-top: 7rem;}
 .linkhome{font-family: 'HelveticaLTSTD-LightC'; font-size: 1.8rem; text-align: left; display: block; text-decoration: none; color: #000;;}
@@ -438,6 +439,9 @@ input {-webkit-appearance: none;border-radius: 0;}
 .searchform_results input[type="search"]:focus{ outline-width: 0; }
 
 
+input[type=text], textarea{outline:none;border:none;}
+
+
 /*Footer*/
 footer {background: #000;}
 .main_footer{ width: 100%; clear: both; padding-top: 1rem; padding-bottom: 1rem; text-align: center; color: #fff; font-size: 12px; font-family: 'Raleway-Medium';}
@@ -475,7 +479,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 /*media queries*/
 
 @media screen and (max-width:1921px){
-	.each_post img{height:274px}
+	.all_other article.each_post img{height:274px}
 	section.cols figure img{height:335px;}
 	section.cols figcaption.info_container{display:inline-block;position:relative;top:-300px;left:0%;width:80%;padding-left:10px;}
 	section.cols figure{height:32vh;margin-bottom:39px;}
@@ -484,7 +488,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 /*Screen 1440*/
 @media screen and (max-width:1440px){
-	.each_post img{height: 205px;}
+/*	.each_post img{height: 205px;}*/
+	.all_other article.each_post img{height:205px;}
 	h1.logo{ position:absolute;left:5.5%;top:0%;z-index: 1;height:14rem;}
 	body.home h1.logo{ position:absolute;left:5%;top:-1%;z-index: 1;height:14rem;}
 	article.single_post{width:80%;}
@@ -496,7 +501,15 @@ body.home .main_footer{position: fixed; bottom:0px; }
 }
 /*Screen 1280 */
 @media screen and (max-width:1280px){
-	.each_post img{height: 180px;}
+	.each_post.numero_1{width:100%;height:50%;}
+	.each_post.numero_2{display:none;}
+	.all_other{-webkit-column-count:4;-moz-column-count:4;-o-column-count:4;-column-count:4;}
+	.each_post.numero_3{display:none;}
+	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
+	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
+	.each_post.numero_4 img{width: 100%;height:100%;}
+	.each_post.numero_5 img{width: 100%;height:100%;}
+	.all_other article.each_post img{height: 180px;}
 	article.single_post{width:90%;}
 	section.cols figure img{height:278px;}
 	section.cols figure{height:30.2vh;margin-bottom:30px;}
@@ -508,15 +521,18 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 @media screen and (max-width: 1024px){
 		/*h1.logo{ width: 100%; position:absolute;left:6%;top:5%;z-index: 1;height:10rem;}*/
-	.each_post h3{display:block;}
+	.each_post h3{display:inline;background:#000;}
+	.each_post span{display:inline;background:#000;}
 	.each_post h3:hover{background:#000;}
+	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
+	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
 	.container{width: 90%;}
 	.sidebar{width: 16.5%;}
 	section.feed_container{width: 100%;margin-top:60px;}
 	.all_other{-webkit-column-count:4!important;-moz-column-count:4!important;-o-column-count:4!important;-column-count:4!important;}
 	article.single_post{width:100%;}
 /*	article.qsomos{margin-top:50px;}*/
-.each_post img{height:220px;margin-bottom:-5px;}
+	.all_other article.each_post img{height:220px;margin-bottom:-5px;}
 	section.gallery{height:70vh;}
 	section.cols figure img{height:220px;}
 	section.cols figure{height:23.7vh;margin-bottom:30px;}
@@ -584,12 +600,12 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	/*Post feed*/
 /*	.feed_container{padding-top: 1rem;}*/
 	.each_post{width:100%;margin: 0;}
-	.each_post h3{vertical-align: 1.4rem; display: inline-block; color: #000; margin: 0 0 0 .5rem;}
+	.each_post h3{vertical-align: 1.4rem; display: inline; color: #000; margin: 0 0 0 .5rem;}
 	.all_other{-moz-column-count:2!important;-webkit-column-count:2!important;-o-column-count:2!important;column-count:2!important;}
 	.each_post img{margin-bottom:16px;width: 100%; display: inline-block;}
 	.each_post.numero_1, .each_post.numero_2 {width: 100%!important;position: relative;}
-	.numero_1 h3{width:70%!important;}
-	.each_post h3{width:90%;background-color:#000;color:#fff;}
+	/*.numero_1 h3{width:70%!important;}*/
+	.each_post h3{/*width:90%;background-color:#000;*/color:#fff;}
 	.numero_2{display:none;}
 	.numero_3, .numero_4, .numero_5{display:none;}
 
@@ -603,7 +619,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
   	.main_content p{font-size: 1.6rem; }
   	section.mas_posts{margin-bottom:0;}
   	article.single_post{ margin-top:-70px;}
-  	article.each_post h3{width:90%;font-size:1.6rem;}
+  	article.each_post h3{/*width:90%;*/font-size:1.6rem;}
   	.relacionados{-moz-column-count:2;-webkit-column-count:2;-o-column-count:2;column-count:2;}
 	.relacionados img{margin-bottom:16px;}
 	/*Tag.php*/
@@ -738,8 +754,9 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	section.relacionados article.each_post img{height:142px;}
 	section.feed_container{margin-top: 30px;}
 	header.clearfix h1.logo{width:150px;margin:0px 0 0 -20px;}
-	footer.main_footer a{display:block;}
-	footer.main_footer b{display:none;}
+	footer.main_footer{height:35px;}
+	footer.main_footer a{display:inline-block;margin:0;font-size:1rem}
+	/*footer.main_footer b{display:none}*/
 	.each_post img{margin-bottom:9px;height:150px;}
 	section.cols figure img{height:160px;width:160px;}
 	section.cols figure{height:17.1vh;margin-bottom:22px;}

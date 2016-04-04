@@ -60,7 +60,7 @@
 					</div>
 					<div class="menu-caja"><!--MENU MOVIL-->
 						<p class="chosen"></p>
-						<a href="<?php echo site_url('que-somos/')?>" class="somos"><?php _e('¿qué somos?','limulus'); ?></a>
+						<a href="<?php echo site_url('que-somos/')?>" class="somos"><?php _e('¿QUÉ SOMOS?','limulus'); ?></a>
 						<?php get_qtrans_single('lang_change');?>
 						<ul class="menu-redes social_bar">
 							<li class="twitter"><a href="https://twitter.com/limulus_mx" target="_blank"></a></li>
