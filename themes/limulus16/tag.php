@@ -12,7 +12,9 @@
 				the_post(); 
 			?>
 				
+				
 				<?php if($count == 3) echo '<section class="mid_posts clearfix">'; ?>
+
 				
 				<article class="each_post <?php echo 'numero_'.$count; ?>">
 

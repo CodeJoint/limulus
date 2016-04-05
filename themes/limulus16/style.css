@@ -281,8 +281,8 @@ ul.menu-redes li{width:30px;height:30px;}
 .feed_header .banner .info_container span{ display: block; clear: left; font-family: 'HelveticaLTSTD-LightC'; font-size: 2rem; text-align: left; text-transform: none;}
 .feed_container{width:100%!important;/*float:left;*/border-color:#B1B1B1;border-width:1px 1px 1px 0;margin-bottom:.5rem;padding-bottom:0.3rem;min-height:420px;}
 
-.each_post.numero_1, .each_post.numero_2 {width: 49.3%; float: left;position: relative;margin-right: 1%;height:400px}
-.each_post.numero_1 img, .each_post.numero_2 img {width: 100%; height: auto;position: relative;top: 0px;left: 0px;}
+.each_post.numero_1, .each_post.numero_2 {width: 49.3%; float: left;position: relative;margin-right: 1%;min-height:400px}
+.each_post.numero_1 img, .each_post.numero_2 img {width: 100%; min-height:400px;position: relative;top: 0px;left: 0px;}
 .each_post.numero_1 h3, .each_post.numero_2 h3 {position: absolute; top: 10%;left: 5%;font-size: 22px; padding: 5px;width: 80%;}
 .each_post.numero_1:hover img, .each_post.numero_2:hover img {opacity: .6;}
 
@@ -315,7 +315,7 @@ ul.menu-redes li{width:30px;height:30px;}
 
 .all_other .each_post:nth-child(4n){margin-right: 0px!important;}
 
-.post_feed_home{position: relative;	}
+.post_feed_home section.mid_posts article.numero_3, article.numero_4, article.numero_5{position: relative;}
 
 section.feed_container{margin-top:30px;}
 
@@ -344,11 +344,16 @@ section.feed_container{margin-top:30px;}
 .mas_posts{margin-bottom: 7rem;margin-top:300px;}
 /*
 holkan
+
+
+RELACIONADOS
 */
+
 .relacionados{-moz-column-count:4;-webkit-column-count:4;-o-column-count:4;column-count:4;}
+
 .mas_posts h4{font-family: 'Raleway-Medium'; font-size: 22px; text-transform: uppercase;margin-bottom: 50px;font-weight: 400;}
 /*.mas_posts .each_post {background: #000;}*/
-.mas_posts .each_post img {vertical-align: top;}
+.mas_posts section.relacionados article.each_post img {border:1px solid green;}
 
 sup{ font-family:'Merriweather'; font-size:1.2rem; vertical-align: top; line-height: 1.3rem; font-weight:700; font-style:italic; color:#0000FF;;}
 .main_content blockquote{ margin: 1rem 0;}
@@ -478,13 +483,13 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 /*media queries*/
 
-@media screen and (max-width:1921px){
+/*@media screen and (max-width:1921px){
 	.all_other article.each_post img{height:274px}
 	section.cols figure img{height:335px;}
 	section.cols figcaption.info_container{display:inline-block;position:relative;top:-300px;left:0%;width:80%;padding-left:10px;}
 	section.cols figure{height:32vh;margin-bottom:39px;}
 	section.relacionados article.each_post img{height:221px;}
-}
+}*/
 
 /*Screen 1440*/
 @media screen and (max-width:1440px){
