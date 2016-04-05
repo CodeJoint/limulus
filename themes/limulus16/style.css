@@ -498,6 +498,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 }
 /*Screen 1280 */
 @media screen and (max-width:1280px){
+
 	.each_post.numero_1{width:100%;height:50%;}
 	.each_post.numero_2{display:none;}
 	.all_other{-webkit-column-count:4;-moz-column-count:4;-o-column-count:4;-column-count:4;}
@@ -509,6 +510,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 	.all_other article.each_post img{height: 273px;}
 	article.single_post{width:90%;}
+	article.article-tag article.numero_4{display:none;}
+	article.article-tag article.numero_5{display:none;}
 	
 }
 
@@ -692,16 +695,11 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 
 @media screen and (max-width:768px){
-/*	h1.logo{ width: 100%; position:absolute;left:31%;top:0%;z-index: 1;height:9rem;}*/
 	article.single_post{margin-top:0%;}
 	.each_post img{margin-bottom:10px;height:340px;}
-/*	section.cols article div.info_container{border:1px solid white;}*/
-	h1.logo{ position:absolute;left:35%;top:2%;z-index: 1;height:8rem;}
+	h1.logo{position:absolute;left:35%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:35%;top:2%;z-index: 1;height:8rem;}
-	section.cols figure img{height:339px;width:339px;}
-	section.cols figure img:last-child{border-top:-10px;}
-	section.cols figure{height:37vh;margin-bottom:20px;}
-	section.cols figcaption.info_container{display:inline-block;position:relative;top:-98%;left:0%;width:80%;padding-left:10px;z-index: 10}
+	
 
 }
 
@@ -710,10 +708,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	
 	h1.logo{ position:absolute;left:29%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:29%;top:2%;z-index: 1;height:8rem;}
-	.each_post img{height:250px;}
-	section.cols figure img{height:249px;width:249px;}
-	section.cols figure{height:27vh;margin-bottom:30px;}
-	section.cols figcaption.info_container{display:inline-block;width:80%;padding-left:10px;z-index: 10}
+	.all_other article.each_post img{height:250px;}
+
 }
 
 
@@ -721,11 +717,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	h1.logo{ position:absolute;left:28%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:28%;top:2%;z-index: 1;height:8rem;}
 	.search_quesomos {position:absolute;top:65%;left:5%;width:100%;}
-	.each_post img{height:210px;}
-	section.cols figure img{height:209px;width:209px;}
-	section.cols figure{height:22.5vh;margin-bottom:16px;}
-	section.cols figcaption.info_container{display:inline-block;width:80%;padding-left:10px;z-index: 10}
-	section.relacionados article.each_post img{height:189px;}
+	.all_other article.each_post img{height:210px;}
+	.mas_posts section.relacionados article.each_post img{height:190px;}
 }
 
 
@@ -742,23 +735,22 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	section#sobre_limulus{margin-top:0;}
 	div.info_container h3{width:100%;height:100%;position:absolute;top:0;left:0;}
 	div.info_container h3 span{font-size:1rem;line-height:1.3rem;width:100%;}
-	.each_post img{width: 100%; height: 180px;margin-bottom:10px;}	
-	section.cols figure img{height:183px;width:183px;}
-	section.cols figure{height:19.6vh;margin-bottom:22px;}
-	section.cols figcaption.info_container{display:inline-block;width:80%;padding-left:10px;z-index: 10}	
+	.all_other article.each_post img{width: 100%; height: 180px;margin-bottom:0px;}	
+	.mas_posts section.relacionados article.each_post img{height:165px;}
 
 }
 @media only screen and (max-width:375px){
+	article.each_post.numero_1{width:100%;height:337px;}
+	.each_post.numero_1 img{min-height:337px;width:337px;}
+	.each_post.numero_1 {min-height:337px;width:337px;}
 	section.relacionados article.each_post img{height:142px;}
 	section.feed_container{margin-top: 30px;}
 	header.clearfix h1.logo{width:150px;margin:0px 0 0 -20px;}
 	footer.main_footer{height:35px;}
 	footer.main_footer a{display:inline-block;margin:0;font-size:1rem}
 	/*footer.main_footer b{display:none}*/
-	.each_post img{margin-bottom:9px;height:150px;}
-	section.cols figure img{height:160px;width:160px;}
-	section.cols figure{height:17.1vh;margin-bottom:22px;}
-	section.cols figcaption.info_container{display:inline-block;width:80%;padding-left:10px;z-index: 10}
+	.all_other article.each_post img{margin-bottom:9px;height:150px;}
+	.mas_posts section.relacionados article.each_post img{height:142px;margin-bottom:1px;}
 
 }
 @media only screen and (max-width:320px){
@@ -771,5 +763,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	section.cols figure img{height:135px;width:135px;}
 	section.cols figure{height:14.2vh;margin-bottom:16px;}
 	section.cols figcaption.info_container{display:inline-block;width:100%;padding-left:10px;z-index: 10}
+	.each_post h3 span {font-size: 12px; line-height: 6px; background:none;font-weight:normal;}
+	.each_post h3{position:relative;top:0;left:0;color:#000;background:none;height:150px;}
 }
 
