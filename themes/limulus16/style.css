@@ -302,7 +302,7 @@ ul.menu-redes li{width:30px;height:30px;}
 .each_post span{display:inline;}
 .each_post span:hover{}
 .each_post h3{display:none; font-family: 'Raleway-ExtraBold'; font-size: 20px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 10%; padding:5px;width: 80%;}
-.each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: inline; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
+.each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: inline; clear: both; font-weight: bold; font-size: 16px; line-height: 22px;}
 .each_post p{font-size: 1.5rem;}
 .each_post{width: 100%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 16px;background: #000; vertical-align: top}
 .each_post a{text-decoration: none; color: inherit;}
@@ -342,7 +342,7 @@ section.feed_container{margin-top:30px;}
 .main_content a{color: #000;}
 .main_content{margin-bottom: 4rem}
 .mas_posts{margin-bottom: 7rem;margin-top:300px;}
-.telecine{border:1px solid red;}
+
 /*
 holkan
 
