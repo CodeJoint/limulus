@@ -27,6 +27,7 @@
 						<h3><?php the_title(); ?></h3>
 					</a>
 				</article>
+				
 				<?php if($count == 5) echo '</section><section class="all_other">'; ?>
 
 			<?php endwhile; endif; ?>
