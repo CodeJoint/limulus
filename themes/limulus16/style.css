@@ -194,7 +194,7 @@ a:hover, a:active, a:focus {
 /*General*/
 body{ -webkit-font-smoothing: antialiased; color: #000; }
 body.home {background: #000;}
-
+.each_post img {height: auto;}
 /*Header*/
 .container > header{width: 100%; height: auto;background-size: contain; background-repeat: no-repeat; background-position-y: 100%;margin-bottom: 80px;}
 body.home .container > header{width: 100%; height: auto;background-size: contain; background-repeat: no-repeat; background-position-y: 100%;margin-bottom: 0px;}
@@ -281,8 +281,8 @@ ul.menu-redes li{width:30px;height:30px;}
 .feed_header .banner .info_container span{ display: block; clear: left; font-family: 'HelveticaLTSTD-LightC'; font-size: 2rem; text-align: left; text-transform: none;}
 .feed_container{width:100%!important;/*float:left;*/border-color:#B1B1B1;border-width:1px 1px 1px 0;margin-bottom:.5rem;padding-bottom:0.3rem;min-height:420px;}
 
-.each_post.numero_1, .each_post.numero_2 {width: 49.3%; float: left;position: relative;margin-right: 1%;min-height:400px}
-.each_post.numero_1 img, .each_post.numero_2 img {width: 100%; min-height:400px;position: relative;top: 0px;left: 0px;}
+.each_post.numero_1, .each_post.numero_2 {width: 49.3%; float: left;position: relative;margin-right: 1%;}
+.each_post.numero_1 img, .each_post.numero_2 img {width: 100%; position: relative;top: 0px;left: 0px;}
 .each_post.numero_1 h3, .each_post.numero_2 h3 {position: absolute; top: 10%;left: 10%;font-size: 22px; padding: 5px;width: 80%;}
 .each_post.numero_1:hover img, .each_post.numero_2:hover img {opacity: .6;}
 
@@ -300,16 +300,16 @@ ul.menu-redes li{width:30px;height:30px;}
 /*.all_other article.each_post img{width:100px; height:241px;}*/
 
 .each_post span{display:inline;}
-.each_post span:hover{background:#000;}
+.each_post span:hover{}
 .each_post h3{display:none; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 10%; padding:5px;width: 80%;}
 .each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: inline; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
 .each_post p{font-size: 1.5rem;}
 .each_post{width: 100%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 16px;}
 .each_post a{text-decoration: none; color: inherit;}
-.each_post:hover h3{display: inline;background:#000;}
+.each_post:hover h3{display: inline;}
 .each_post:hover img{opacity: .6}
 
-.each_post img{width: 100%; height: 241px;}
+.each_post img{width: 100%;}
 .no_post_error{ font-family: 'HelveticaLTSTD-BoldC'; font-size: 5rem; color: #000; text-transform: uppercase; text-align: left; margin-top: 7rem;}
 .linkhome{font-family: 'HelveticaLTSTD-LightC'; font-size: 1.8rem; text-align: left; display: block; text-decoration: none; color: #000;;}
 
@@ -353,14 +353,14 @@ RELACIONADOS
 
 .mas_posts h4{font-family: 'Raleway-Medium'; font-size: 22px; text-transform: uppercase;margin-bottom: 50px;font-weight: 400;}
 /*.mas_posts .each_post {background: #000;}*/
-.mas_posts section.relacionados article.each_post img {height:237px;}
+.mas_posts section.relacionados article.each_post img {}
 
 sup{ font-family:'Merriweather'; font-size:1.2rem; vertical-align: top; line-height: 1.3rem; font-weight:700; font-style:italic; color:#0000FF;;}
 .main_content blockquote{ margin: 1rem 0;}
 .main_content blockquote p{font-style:italic;margin:0;font-family:'Merriweather';font-weight:300;}
 .main_content ul li{font-family:'HelveticaLTSTD-Light'; font-size:1.8rem;}
 .main_content h4{ font-family: 'Raleway'; font-size: 22px; text-transform: uppercase; margin-bottom: 2rem;;}
-.main_content .wp-caption-text{margin:-1rem 0 2rem 0; font-family: 'Raleway-Regular'; font-size: 12px; color: #000; line-height: 1.8rem;width:30%;}
+.main_content .wp-caption-text{margin:-1rem 0 2rem 0; font-family: 'Raleway-Regular'; font-size: 12px; color: #000; line-height: 1.8rem;width:70%;}
 .main_content .wp-caption {width: 100%!important;}
 .footnote{width:100%;border-style:solid;border-width:0px 0 0px 0;border-color:#606060;margin:4rem 0 0 0;padding:0rem 0rem;background:#fff!important;}
 .footnote p{font-family:'Merriweather'; font-size: 1.2rem; color: #000;line-height:2rem;margin-bottom:5px;font-weight:300;}
@@ -481,7 +481,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 /*Screen 1440*/
 @media screen and (max-width:1440px){
 /*	.each_post img{height: 205px;}*/
-	.all_other article.each_post img{height:205px;}
+	.all_other article.each_post img{}
 	h1.logo{ position:absolute;left:5.5%;top:0%;z-index: 1;height:14rem;}
 	body.home h1.logo{ position:absolute;left:5%;top:-1%;z-index: 1;height:14rem;}
 	article.single_post{width:80%;}
@@ -492,16 +492,16 @@ body.home .main_footer{position: fixed; bottom:0px; }
 /*Screen 1280 */
 @media screen and (max-width:1280px){
 
-	.each_post.numero_1{width:100%;height:50%;}
+	.each_post.numero_1{width:100%;}
 	.each_post.numero_2{display:none;}
 	.all_other{-webkit-column-count:4;-moz-column-count:4;-o-column-count:4;-column-count:4;}
 	.each_post.numero_3{display:none;}
-	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
-	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
-	.each_post.numero_4 img{width: 100%;height:100%;}
-	.each_post.numero_5 img{width: 100%;height:100%;}
+	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;}
+	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;}
+	.each_post.numero_4 img{width: 100%;}
+	.each_post.numero_5 img{width: 100%;}
 
-	.all_other article.each_post img{height: 273px;}
+	.all_other article.each_post img{}
 	article.single_post{width:90%;}
 	article.article-tag article.numero_4{display:none;}
 	article.article-tag article.numero_5{display:none;}
@@ -514,16 +514,16 @@ body.home .main_footer{position: fixed; bottom:0px; }
 @media screen and (max-width: 1024px){
 	.each_post h3{display:inline;background:#000;}
 	.each_post span{display:inline;background:#000;}
-	.each_post h3:hover{background:#000;}
-	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
-	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;height:456px;}
+	.each_post h3:hover{}
+	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;}
+	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;}
 	.container{width: 90%;}
 	.sidebar{width: 16.5%;}
 	section.feed_container{width: 100%;margin-top:60px;}
 	.all_other{-webkit-column-count:4!important;-moz-column-count:4!important;-o-column-count:4!important;-column-count:4!important;}
 	article.single_post{width:100%;}
 /*	article.qsomos{margin-top:50px;}*/
-	.all_other article.each_post img{height:220px;margin-bottom:-5px;}
+	.all_other article.each_post img{}
 	section.gallery{height:70vh;}
 	article.article-tag{margin-top:30px;}
 	article.article-tag article.numero_4{display:none;}
@@ -596,14 +596,14 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.all_other{-moz-column-count:2!important;-webkit-column-count:2!important;-o-column-count:2!important;column-count:2!important;}
 	.each_post img{margin-bottom:0px;width: 100%; display: inline-block;}
 	.all_other article.each_post{margin-bottom:16px;}
-	.all_other article.each_post img{height:372px;}
+	.all_other article.each_post img{}
 	.each_post.numero_1, .each_post.numero_2 {width: 100%!important;position: relative;}
 	/*.numero_1 h3{width:70%!important;}*/
 	.each_post h3{/*width:90%;background-color:#000;*/color:#fff;}
 	.numero_2{display:none;}
 	.numero_3, .numero_4, .numero_5{display:none;}
 
-	.each_post img{width: 100%; height: 372px;/*margin-bottom:-10px;*/}	
+	.each_post img{width: 100%; /*margin-bottom:-10px;*/}	
 
 
   	/*Single*/
@@ -689,7 +689,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 @media screen and (max-width:768px){
 	article.single_post{margin-top:0%;}
-	.each_post img{margin-bottom:10px;height:340px;}
+	.each_post img{margin-bottom:10px;}
 	h1.logo{position:absolute;left:35%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:35%;top:2%;z-index: 1;height:8rem;}
 	
@@ -701,7 +701,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	
 	h1.logo{ position:absolute;left:29%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:29%;top:2%;z-index: 1;height:8rem;}
-	.all_other article.each_post img{height:250px;}
+	.all_other article.each_post img{}
 
 }
 
@@ -710,13 +710,13 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	h1.logo{ position:absolute;left:28%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:28%;top:2%;z-index: 1;height:8rem;}
 	.search_quesomos {position:absolute;top:65%;left:5%;width:100%;}
-	.all_other article.each_post img{height:210px;}
-	.mas_posts section.relacionados article.each_post img{height:190px;}
+	.all_other article.each_post img{}
+	.mas_posts section.relacionados article.each_post img{}
 }
 
 
 @media only screen and (max-width:435px ) {
-	section.relacionados article.each_post img{height:165px;}
+	section.relacionados article.each_post img{}
 	article.single_post{margin-top:-60px;}
 	section.feed_container{margin-top:30px;}
 	.header_menu{ /*padding-top: 1.6rem;*/ width: 90%;height:50px!important;position:absolute;top:4%;}
@@ -728,15 +728,15 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	section#sobre_limulus{margin-top:0;}
 	div.info_container h3{width:100%;height:100%;position:absolute;top:0;left:0;}
 	div.info_container h3 span{font-size:1rem;line-height:1.3rem;width:100%;}
-	.all_other article.each_post img{width: 100%; height: 180px;margin-bottom:0px;}	
-	.mas_posts section.relacionados article.each_post img{height:165px;}
+	.all_other article.each_post img{width: 100%; margin-bottom:0px;}	
+	.mas_posts section.relacionados article.each_post img{}
 
 }
 @media only screen and (max-width:375px){
-	article.each_post.numero_1{width:100%;height:337px;}
-	.each_post.numero_1 img{min-height:337px;width:337px;}
-	.each_post.numero_1 {min-height:337px;width:337px;}
-	section.relacionados article.each_post img{height:142px;}
+	article.each_post.numero_1{width:100%;}
+	.each_post.numero_1 img{width:337px;}
+	.each_post.numero_1 {width:337px;}
+	section.relacionados article.each_post img{}
 	section.feed_container{margin-top: 30px;}
 	header.clearfix h1.logo{width:150px;margin:0px 0 0 -20px;}
 	.each_post h3{font-size: 14px}
@@ -744,17 +744,17 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	footer.main_footer{height:35px;}
 	footer.main_footer a{display:inline-block;margin:0;font-size:1rem}
 	/*footer.main_footer b{display:none}*/
-	.all_other article.each_post img{margin-bottom:9px;height:150px;}
-	.mas_posts section.relacionados article.each_post img{height:142px;margin-bottom:1px;}
+	.all_other article.each_post img{margin-bottom:9px;}
+	.mas_posts section.relacionados article.each_post img{margin-bottom:1px;}
 
 }
 @media only screen and (max-width:320px){
-	.each_post.numero_1{min-height:270px;}
+	.each_post.numero_1{}
 	article.each_post.numero_1 img{width:290px;}
 	article.article-tag article.each_post h3{color:#000;background:none;}
-	.mas_posts section.relacionados article.each_post img{height:116px;}
+	.mas_posts section.relacionados article.each_post img{}
 	section.relacionados article.each_post h3{color:#000;background:none;}
-	.all_other article.each_post img{height:135px;}
+	.all_other article.each_post img{}
 	h1.logo{ width: 100%; position:absolute;left:27%;top:0%;z-index: 1;height:9rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:31%;top:3%;z-index: 1;height:6rem;}
 	section#sobre_limulus.clearfix{margin-top:0px ;}
@@ -766,4 +766,3 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 
 }
-
