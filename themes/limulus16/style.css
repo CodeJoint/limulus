@@ -301,15 +301,15 @@ ul.menu-redes li{width:30px;height:30px;}
 
 .each_post span{display:inline;}
 .each_post span:hover{}
-.each_post h3{display:none; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 10%; padding:5px;width: 80%;}
+.each_post h3{display:none; font-family: 'Raleway-ExtraBold'; font-size: 20px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 10%; padding:5px;width: 80%;}
 .each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: inline; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
 .each_post p{font-size: 1.5rem;}
-.each_post{width: 100%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 16px;}
+.each_post{width: 100%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 16px;background: #000; vertical-align: top}
 .each_post a{text-decoration: none; color: inherit;}
 .each_post:hover h3{display: inline;}
 .each_post:hover img{opacity: .6}
 
-.each_post img{width: 100%;}
+.each_post img{width: 100%;vertical-align: top}
 .no_post_error{ font-family: 'HelveticaLTSTD-BoldC'; font-size: 5rem; color: #000; text-transform: uppercase; text-align: left; margin-top: 7rem;}
 .linkhome{font-family: 'HelveticaLTSTD-LightC'; font-size: 1.8rem; text-align: left; display: block; text-decoration: none; color: #000;;}
 
@@ -423,7 +423,6 @@ article.article-tag article.numero_5 h3{display:none;}
 .each_serarch_result .info_container h3{font-family: 'HelveticaLTSTD-BoldC'; text-transform: uppercase; color: #000;}
 .each_serarch_result .info_container h3 span{font-family: 'HelveticaLTSTD-LightC'; text-transform:none;}
 
-.each_post h3{}
 
 .volver a{text-decoration: none; color:#000;font-weight: bold;}
 span.volver{position:absolute;top:450px;left:5%;}
@@ -512,8 +511,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 /*Screen 1024 iPad*/
 
 @media screen and (max-width: 1024px){
-	.each_post h3{display:inline;background:#000;}
-	.each_post span{display:inline;background:#000;}
+	.each_post h3{display:inline;/*background:#000;*/}
+	.each_post span{display:inline;/*background:#000;*/}
 	.each_post h3:hover{}
 	.each_post.numero_4 {width: 49.5%; float: left;position: relative;margin-right: 1%;}
 	.each_post.numero_5 {width: 49.5%; float: left;position: relative;margin-right: 1%;}
@@ -613,7 +612,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
   	.main_content p{font-size: 1.6rem; }
   	section.mas_posts{margin-bottom:0;}
   	article.single_post{ margin-top:-70px;}
-  	article.each_post h3{/*width:90%;*/font-size:1.6rem;}
+  	article.each_post h3{/*width:90%;*/font-size:1.4rem;}
   	.relacionados{-moz-column-count:2;-webkit-column-count:2;-o-column-count:2;column-count:2;}
 	.relacionados img{margin-bottom:16px;}
 	/*Tag.php*/

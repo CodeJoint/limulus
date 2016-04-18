@@ -127,6 +127,7 @@
 		
 		add_image_size( 'slider', 805, 140, true );
 		add_image_size( 'big_lim', 800, 400, true );
+		add_image_size( 'big_single_lim', 962, 400, true );
 		add_image_size( 'mid_lim', 526, 400, true );
 		add_image_size( 'medium_lim', 600, 600, true );
 

@@ -21,7 +21,7 @@
 							if($count > 5){
 								the_post_thumbnail('medium_lim', array( )); //mediun_lim 
 							} else {
-								the_post_thumbnail('big_lim', array( )); //big_lim
+								the_post_thumbnail('big_single_lim', array( )); //big_lim
 							}
 						?>
 						<h3><?php the_title(); ?></h3>
