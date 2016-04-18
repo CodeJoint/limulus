@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	console.log("si no funcionara no me vieras");
 
+	$(".telecine").fitVids();
+
 	// $(".menu-caja").hide();
 	$(".menu-bars").click(function(){
 		$(".menu-bars").hide();
@@ -23,6 +25,8 @@ SEARCH FORM
 			$(".menu_item").fadeIn("slow");
 		});
 	};
+
+
 });
 
 

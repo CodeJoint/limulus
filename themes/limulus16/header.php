@@ -9,6 +9,7 @@
 		<meta http-equiv="cleartype" content="on">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300italic,300' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/jquery.fitvids.js"></script>
 		<script type="text/javascript" src="<?php echo THEMEPATH; ?>js/script.js"></script>
 		<script type="text/javascript" language="javascript"src="<?php echo THEMEPATH; ?>js/cycle.js"></script>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
