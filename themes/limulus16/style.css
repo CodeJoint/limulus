@@ -701,7 +701,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	
 	h1.logo{ position:absolute;left:29%;top:2%;z-index: 1;height:8rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:29%;top:2%;z-index: 1;height:8rem;}
-	.all_other article.each_post img{}
+	.all_other article.each_post img{opacity: .6}
+	.main_footer {padding: .5rem 0;}
 
 }
 
@@ -754,7 +755,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	article.article-tag article.each_post h3{color:#fff;background:none;}
 	
 	section.relacionados article.each_post h3{color:#fff;background:none;}
-	.all_other article.each_post img{}
+	.all_other article.each_post img{opacity: .6;}
 	h1.logo{ width: 100%; position:absolute;left:27%;top:0%;z-index: 1;height:9rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:31%;top:3%;z-index: 1;height:6rem;}
 	section#sobre_limulus.clearfix{margin-top:0px ;}
@@ -764,6 +765,7 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	.each_post h3{/*position:relative;top:0;left:0;*//*color:#fff;background:#000;*/font-size:14px;height:150px;padding:5px;line-height: 17px}
 	.search_page section article.each_post h3{color:#fff;background:none;font-size: 14px}
 	.search_page section article.each_post span{color:#fff;background:none;font-size: 11px;}
+
 
 
 }
