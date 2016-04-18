@@ -283,14 +283,14 @@ ul.menu-redes li{width:30px;height:30px;}
 
 .each_post.numero_1, .each_post.numero_2 {width: 49.3%; float: left;position: relative;margin-right: 1%;min-height:400px}
 .each_post.numero_1 img, .each_post.numero_2 img {width: 100%; min-height:400px;position: relative;top: 0px;left: 0px;}
-.each_post.numero_1 h3, .each_post.numero_2 h3 {position: absolute; top: 10%;left: 5%;font-size: 22px; padding: 5px;width: 80%;}
+.each_post.numero_1 h3, .each_post.numero_2 h3 {position: absolute; top: 10%;left: 10%;font-size: 22px; padding: 5px;width: 80%;}
 .each_post.numero_1:hover img, .each_post.numero_2:hover img {opacity: .6;}
 
 .each_post.numero_2, .each_post.numero_5 {margin-right: 0%!important;} 
 
 .each_post.numero_3, .each_post.numero_4, .each_post.numero_5 {width: 32.5%; float: left;position: relative;margin-right: 1%;/*margin-bottom: 2%;*/}
 .each_post.numero_3 img, .each_post.numero_4 img, .each_post.numero_5 img {width: 100%; height: auto;position: relative;top: 0px;left: 0px;}
-.each_post.numero_3 h3, .each_post.numero_4 h3, .each_post.numero_5 h3 {position: absolute; top: 5%;left: 2.5%;font-size: 22px; padding: 5px;}
+.each_post.numero_3 h3, .each_post.numero_4 h3, .each_post.numero_5 h3 {position: absolute; top: 5%;left: 10%;font-size: 22px; padding: 5px;}
 .each_post.numero_3:hover img, .each_post.numero_4:hover img, .each_post.numero_5:hover img {opacity: .6}
 /*.each_post{width: 23.7%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 1%;}*/
 
@@ -301,7 +301,7 @@ ul.menu-redes li{width:30px;height:30px;}
 
 .each_post span{display:inline;}
 .each_post span:hover{background:#000;}
-.each_post h3{display:none; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 5%; padding:5px;width: 80%;}
+.each_post h3{display:none; font-family: 'Raleway-ExtraBold'; font-size: 22px;text-transform: uppercase;text-align: left;color: #fff; position: absolute; top: 5%; left: 10%; padding:5px;width: 80%;}
 .each_post h3 span{font-family: 'Merriweather'; margin: 0; text-transform: none; display: inline; clear: both; font-weight: bold; font-size: 16px; line-height: 25px;}
 .each_post p{font-size: 1.5rem;}
 .each_post{width: 100%; color: #979797; cursor: pointer; display: inline-block; vertical-align: top; font-family: 'HelveticaLTSTD-LightC';margin-right: 1%; position: relative; margin-bottom: 16px;}
@@ -423,14 +423,7 @@ article.article-tag article.numero_5 h3{display:none;}
 .each_serarch_result .info_container h3{font-family: 'HelveticaLTSTD-BoldC'; text-transform: uppercase; color: #000;}
 .each_serarch_result .info_container h3 span{font-family: 'HelveticaLTSTD-LightC'; text-transform:none;}
 
-section.cols figure{height:29vh;margin-bottom:20px;}
-section.cols{-moz-column-count:4;-webkit-column-count:4;-o-column-count:4;column-count:4;width:100%;}
-section.cols img{margin-bottom:0px;width:100%;height:448px;vertical-align:top;display:inline-block;}
-section.cols figcaption.info_container{display:inline-block;position:relative;top:-410px;left:0%;width:80%;padding-left:10px;letter-spacing:2px}
-section.cols figcaption.info_container h3{font-family: 'HelveticaLTSTD-BoldC'; text-transform: uppercase;color:#fff;background:#000; font-size:1.4rem;color:#fff;padding:5px;}
-section.cols figcaption.info_container h3 span{font-family: 'HelveticaLTSTD-Light'; text-transform: none;font-size: 1.4rem}
-/*section.cols a img{vertical-align:baseline;margin-bottom:10px;}
-*/
+.each_post h3{}
 
 .volver a{text-decoration: none; color:#000;font-weight: bold;}
 span.volver{position:absolute;top:450px;left:5%;}
@@ -746,6 +739,8 @@ body.home .main_footer{position: fixed; bottom:0px; }
 	section.relacionados article.each_post img{height:142px;}
 	section.feed_container{margin-top: 30px;}
 	header.clearfix h1.logo{width:150px;margin:0px 0 0 -20px;}
+	.each_post h3{font-size: 14px}
+	.each_post h3 span{font-size: 12px;line-height: 0px}
 	footer.main_footer{height:35px;}
 	footer.main_footer a{display:inline-block;margin:0;font-size:1rem}
 	/*footer.main_footer b{display:none}*/
@@ -754,16 +749,21 @@ body.home .main_footer{position: fixed; bottom:0px; }
 
 }
 @media only screen and (max-width:320px){
-	section.relacionados article.each_post img{height:116px;}
-	.each_post img{height:135px;}
+	.each_post.numero_1{min-height:270px;}
+	article.each_post.numero_1 img{width:290px;}
+	article.article-tag article.each_post h3{color:#000;background:none;}
+	.mas_posts section.relacionados article.each_post img{height:116px;}
+	section.relacionados article.each_post h3{color:#000;background:none;}
+	.all_other article.each_post img{height:135px;}
 	h1.logo{ width: 100%; position:absolute;left:27%;top:0%;z-index: 1;height:9rem;}
 	body.home h1.logo{width: 100%; position:absolute;left:31%;top:3%;z-index: 1;height:6rem;}
 	section#sobre_limulus.clearfix{margin-top:0px ;}
 	section#sobre_limulus h3{font-size: 1.5rem ;}
-	section.cols figure img{height:135px;width:135px;}
-	section.cols figure{height:14.2vh;margin-bottom:16px;}
-	section.cols figcaption.info_container{display:inline-block;width:100%;padding-left:10px;z-index: 10}
+	
 	.each_post h3 span {font-size: 12px; line-height: 6px; background:none;font-weight:normal;}
-	.each_post h3{position:relative;top:0;left:0;color:#000;background:none;height:150px;}
+	.each_post h3{position:relative;top:0;left:0;/*color:#fff;background:#000;*/height:150px;padding:5px;}
+	.search_page section article.each_post h3{color:#000;background:none;}
+
+
 }
 

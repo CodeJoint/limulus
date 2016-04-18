@@ -17,6 +17,7 @@
 					global $wp_query;
 					$total_results = $wp_query->found_posts;
 					$query_string  = $wp_query->query_vars['s'];
+
 				?>
 				
 				<hr class="divider">
@@ -32,20 +33,18 @@
 
 				<section class="feed_container post_feed_home clearfix all_other">
 
-					<?php while(have_posts()):the_post(); 
+					<?php while(have_posts()):the_post(); ?>
 
-					?>
-
-					<article class="each_post <?php echo 'numero_'.$count; ?>">
+					<article class="each_post <?php ?>"><!-- php echo 'numero_'.$count; -->
 						<a href="<?php the_permalink(); ?>">
 							<?php
-									the_post_thumbnail('medium_lim', array( )); //mediun_lim 
+									the_post_thumbnail('full'); //mediun_lim 	
 							?>
 							<h3><?php the_title(); ?></h3>
 						</a>
 					</article>
 
-				<?php endwhile; ?>
+				<?php endwhile;?>
 				
 				</section>
 
@@ -55,35 +54,6 @@
 					<?php }; ?>
 
 				</section>
-
-				<!-- <section class="cols">
-					<?php
-							while ( have_posts() ) { 
-								the_post(); 
-					?>
-					<article class="each_post clearfix">  
-						<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail(); ?>
-						<div class="info_container">
-							<h3>
-								<?php the_title(); ?>
-								<span>
-									<?php the_author(); ?>
-								</span>
-							</h3>
-							
-						</div>
-						</a>
-					</article>
-					
-						<h1>
-							
-							
-							<?php }; ?>
-						</h1>
-						
-					
-				</section> -->
 
 				
 				
